@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8"/>
+        <title>Registration</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="box">
+            <form action="" method="POST" id="form">
+                <div class="step-1" id="step-1">
+                    <h2>Register</h2>
+                    <div class="register">
+                        <div class="name-and-email">
+                            Name
+                            <input type="text" id="name" class="inputs" style="padding-left: 10px;" placeholder="enter your name"/>
+                        </div>
+                        <div class="name-and-email">
+                            Email
+                            <input type="email" id="email" class="inputs" style="padding-left: 10px;" placeholder="example@gmail.com"/>
+                        </div>
+                    </div>
+                    <div id="warnings"></div>
+                </div>
+                <div class="buttons">
+                    <button type="submit" id="boton" class="button" value="continue">Continue</button>
+                </div>
+            </form>
+            <form action="" method="POST" id="form2">
+                <div class="step-2" id="step-2">
+                    <h2>Wich topics are you interested in?</h2>
+                    <div class="tarjetas">
+                        <input type="checkbox" id="develop"/>
+                        <label class="tarjeta" for="develop" class="tarjeta" style="padding-left: 10px;">software develop</label>
+                        <input type="checkbox" id="personal"/>
+                        <label class="tarjeta" for="personal" class="tarjeta" style="padding-left: 10px;">user experience</label>
+                        <input type="checkbox" id="design"/>
+                        <label class="tarjeta" for="design" class="tarjeta" style="padding-left: 10px;">graphic design</label>
+                        <div id="warnings2"></div>
+                        <div class="buttons">
+                            <button type="submit" id="boton2" class="button" value="continue">Continue</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <form action="" method="POST" id="form3">
+                <div class="step-3" id="step-3">
+                    <h2>Summary</h2>
+                    <div class="spans">
+                        <div style="color: grey;">Name: <span id="saved-name" class="span"></span></div>
+                        <div style="color: grey;">Email: <span id="saved-email" class="span"></span></div>
+                        <div style="color: grey;">Topics: <div id="selecciones" class="topics"></div></div>
+                    </div>
+                    <div class="buttons">
+                        <button type="submit" id="boton3" class="button" value="continue">Confirm</button>
+                    </div>
+                </div>
+                <div class="finish" id="finish">Registration complete</div>
+            </form>
+        </div>
+        <div class="steps">
+            <div class="current-step" id="steps" style="color: #394150;">Step<span id="step" style="padding-left: 4px; padding-right: 4px;">1</span> of 3</div>
+            <div class="bsteps">
+                <button class="bstep" id="bstep1"></button>
+                <button class="bstep" id="bstep2"></button>
+                <button class="bstep" id="bstep3"></button>
+            </div>
+        </div>
+        <script src="functions.js"></script>
+    </body>
+</html>
